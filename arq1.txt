@@ -1,43 +1,59 @@
 setar usuario no git
-~caminho/para/minha/pasta $ git config --global user.name "Nome do usuario"
-~caminho/para/minha/pasta $ git config --global user.email "email@do.usuario"
+  ~caminho/para/minha/pasta $ git config --global user.name "Nome do usuario"
+  ~caminho/para/minha/pasta $ git config --global user.email "email@do.usuario"
 
 Para Adicionar uma pasta como repositorio (deve estar na pasta que sera o repositorio)
-~caminho/para/minha/pasta $ git init
+  ~caminho/para/minha/pasta $ git init
 
 Para verificar a situação dos arquivos/pacotes dentro do repositorio
-~caminho/para/minha/pasta $ git status
+  ~caminho/para/minha/pasta $ git status
 
 Para rastrear/adiocionar os arquivos no repositorio (. para todos)
-~caminho/para/minha/pasta $ git add nomedoarquivo
+  ~caminho/para/minha/pasta $ git add nomedoarquivo
 
 Para salvar as alteracoes realizados no projeto
-~caminho/para/minha/pasta $ git commit -m "messagem que defini as alterações realizadas"
-~caminho/para/minha/pasta $ git commit -am --> Rastrear e commitar ao mesmo tempo
+  ~caminho/para/minha/pasta $ git commit -m "messagem que defini as alterações realizadas"
+  ~caminho/para/minha/pasta $ git commit -am --> Rastrear e commitar ao mesmo tempo
 
 Para para verificar as alteracoes realizadas ate o momento
-~caminho/para/minha/pasta $ git log
-~caminho/para/minha/pasta $ git log -n 3 --> Exibi os 3 ultimos commits
-~caminho/para/minha/pasta $ git log --oneline --> Exibi os commits de forma resumida
-~caminho/para/minha/pasta $ git log --stat --> Exibi o que foi alterado nos commits
+  ~caminho/para/minha/pasta $ git log
+  ~caminho/para/minha/pasta $ git log -n 3 --> Exibi os 3 ultimos commits
+  ~caminho/para/minha/pasta $ git log --oneline --> Exibi os commits de forma resumida
+  ~caminho/para/minha/pasta $ git log --stat --> Exibi o que foi alterado nos commits
 
 Para adicionar o projeto no GitHub Web (precisa criar um novo repositorio no GitHub e pegar o link de acesso do mesmo)
-~caminho/para/minha/pasta $ git remote add origin https://github.com/alissonpintor/curso_git.git
+  ~caminho/para/minha/pasta $ git remote add origin https://github.com/alissonpintor/curso_git.git
 
 Para enviar as alteracoes realizadas ate o momento para o GitHub (apos realizar um commit)
-~caminho/para/minha/pasta $ git push origin master
+  ~caminho/para/minha/pasta $ git push origin master
 
 Para clonar um repositorio exeistente no GitHub (qquer projeto publico)
-~caminho/para/minha/pasta $ git clone https://github.com/alissonpintor/curso_git.git
+  ~caminho/para/minha/pasta $ git clone https://github.com/alissonpintor/curso_git.git
 
 Para ignorar arquivos ou pastas dentro do repositorio deve-se criar um arquivo .gitignore na raiz do repositorio
 e dentro dele o nome do que se deseja ignorar
 
 Para deletar um arquivo ou pasta
-~caminho/para/minha/pasta $ git rm arquivo_ou_pasta
+  ~caminho/para/minha/pasta $ git rm arquivo_ou_pasta
 
 Para Renomear/Mover arquivos ou pastas
-~caminho/para/minha/pasta $ git mv origin destino
+  ~caminho/para/minha/pasta $ git mv origin destino
+
+Para voltar uma alteracao feita antes de ser rastreado
+  ~caminho/para/minha/pasta $ git checkout -- nome_do_arquivo
+
+Para voltar uma alteracao depois de ser rastreado
+  ~caminho/para/minha/pasta $ git reset --hard  --> Apaga todos os arquivos do stage e reseta todas as alteracoes feitas ate o ultimo checkout salvo
+
+Para voltar uma alteracao que foi feita commit
+  ~caminho/para/minha/pasta $ git revert --no-edit codigo_do_commit
+
+Para criar um novo branch (um novo stage)
+  ~caminho/para/minha/pasta $ git branch novo_branch  --> cria um novo branch
+  ~caminho/para/minha/pasta $ git branch  --> lista os branchs existentes
+  ~caminho/para/minha/pasta $ git checkout novo_branch  --> altera para o branch desejado
+  ~caminho/para/minha/pasta $ git checkout -b novo_branch  --> cria e altera para o branch criado
+  ~caminho/para/minha/pasta $ git branch -d novo_branch  --> para deletar um branch (so pode ser feito se o branch nao estiver selecionado. -D se possuir commit)
 
 
 
