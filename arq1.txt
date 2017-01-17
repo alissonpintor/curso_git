@@ -1,3 +1,7 @@
+setar usuario no git
+~caminho/para/minha/pasta $ git config --global user.name "Nome do usuario"
+~caminho/para/minha/pasta $ git config --global user.email "email@do.usuario"
+
 Para Adicionar uma pasta como repositorio (deve estar na pasta que sera o repositorio)
 ~caminho/para/minha/pasta $ git init
 
