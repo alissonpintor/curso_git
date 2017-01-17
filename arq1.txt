@@ -17,6 +17,9 @@ Para salvar as alteracoes realizados no projeto
 
 Para para verificar as alteracoes realizadas ate o momento
 ~caminho/para/minha/pasta $ git log
+~caminho/para/minha/pasta $ git log -n 3 --> Exibi os 3 ultimos commits
+~caminho/para/minha/pasta $ git log --oneline --> Exibi os commits de forma resumida
+~caminho/para/minha/pasta $ git log --stat --> Exibi o que foi alterado nos commits
 
 Para adicionar o projeto no GitHub Web (precisa criar um novo repositorio no GitHub e pegar o link de acesso do mesmo)
 ~caminho/para/minha/pasta $ git remote add origin https://github.com/alissonpintor/curso_git.git
@@ -30,6 +33,8 @@ Para clonar um repositorio exeistente no GitHub (qquer projeto publico)
 Para ignorar arquivos ou pastas dentro do repositorio deve-se criar um arquivo .gitignore na raiz do repositorio
 e dentro dele o nome do que se deseja ignorar
 
+Para deletar um arquivo ou pasta
+~caminho/para/minha/pasta $ git rm arquivo_ou_pasta
 
 
 
