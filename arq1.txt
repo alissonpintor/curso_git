@@ -1,0 +1,49 @@
+Para Adicionar uma pasta como repositorio (deve estar na pasta que sera o repositorio)
+~caminho/para/minha/pasta $ git init
+
+Para verificar a situação dos arquivos/pacotes dentro do repositorio
+~caminho/para/minha/pasta $ git status
+
+Para rastrear/adiocionar os arquivos no repositorio (. para todos)
+~caminho/para/minha/pasta $ git add nomedoarquivo
+
+Para salvar as alteracoes realizados no projeto
+~caminho/para/minha/pasta $ git commit -m "messagem que defini as alterações realizadas"
+
+Para para verificar as alteracoes realizadas ate o momento
+~caminho/para/minha/pasta $ git log
+
+Para adicionar o projeto no GitHub Web (precisa criar um novo repositorio no GitHub e pegar o link de acesso do mesmo)
+~caminho/para/minha/pasta $ git remote add origin https://github.com/alissonpintor/curso_git.git
+
+Para enviar as alteracoes realizadas ate o momento para o GitHub (apos realizar um commit)
+~caminho/para/minha/pasta $ git push origin master
+
+Para clonar um repositorio exeistente no GitHub (qquer projeto publico)
+~caminho/para/minha/pasta $ git clone https://github.com/alissonpintor/curso_git.git
+
+
+
+
+
+
+
+
+
+
+CONTEUDO PEGO NO GIT
+…or create a new repository on the command line:
+    echo "# curso_git" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/alissonpintor/curso_git.git
+    git push -u origin master
+
+
+…or push an existing repository from the command line:
+    git remote add origin https://github.com/alissonpintor/curso_git.git
+    git push -u origin master
+
+…or import code from another repository:
+    You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
