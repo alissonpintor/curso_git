@@ -36,6 +36,9 @@ e dentro dele o nome do que se deseja ignorar
 Para deletar um arquivo ou pasta
 ~caminho/para/minha/pasta $ git rm arquivo_ou_pasta
 
+Para Renomear/Mover arquivos ou pastas
+~caminho/para/minha/pasta $ git mv origin destino
+
 
 
 
