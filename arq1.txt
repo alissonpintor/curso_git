@@ -13,6 +13,7 @@ Para rastrear/adiocionar os arquivos no repositorio (. para todos)
 
 Para salvar as alteracoes realizados no projeto
 ~caminho/para/minha/pasta $ git commit -m "messagem que defini as alterações realizadas"
+~caminho/para/minha/pasta $ git commit -am --> Rastrear e commitar ao mesmo tempo
 
 Para para verificar as alteracoes realizadas ate o momento
 ~caminho/para/minha/pasta $ git log
