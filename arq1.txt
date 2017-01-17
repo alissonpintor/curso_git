@@ -26,6 +26,9 @@ Para enviar as alteracoes realizadas ate o momento para o GitHub (apos realizar 
 Para clonar um repositorio exeistente no GitHub (qquer projeto publico)
 ~caminho/para/minha/pasta $ git clone https://github.com/alissonpintor/curso_git.git
 
+Para ignorar arquivos ou pastas dentro do repositorio deve-se criar um arquivo .gitignore na raiz do repositorio
+e dentro dele o nome do que se deseja ignorar
+
 
 
 
